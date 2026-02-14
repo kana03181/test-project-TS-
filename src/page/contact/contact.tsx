@@ -95,6 +95,7 @@ const [isSubmitting, setIsSubmitting] = useState(false);
       <form onSubmit={handleSubmit}>
         <FormInput
           label="お名前"
+          type="text"
           id="name"
           name="name"
           value={name}
@@ -104,6 +105,7 @@ const [isSubmitting, setIsSubmitting] = useState(false);
         {errors.name && <p className={contactStyles.error}>{errors.name}</p>}
         <FormInput
           label="メールアドレス"
+          type="email"
           id="email"
           name="email"
           value={email}
