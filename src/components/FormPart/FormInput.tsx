@@ -3,15 +3,13 @@ import FormItem from "./FormItem";
 
 type Props = React.ComponentProps<"input"> & {
   label: string;
-  id: string;
 }
 
-export default function FormInput({ label, id, ...inputProps }:Props) {
+export default function FormInput({ label, ...inputProps }:Props) {
   return (
-    <FormItem label={label} htmlFor={id}>
+    <FormItem label={label} htmlFor={inputProps.id}>
       <input
         {...inputProps}
-        id={id}
         className={FormStyles.textBox}
       />
     </FormItem>
