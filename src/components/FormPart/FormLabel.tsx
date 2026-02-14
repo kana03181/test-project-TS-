@@ -1,7 +1,7 @@
 import FormStyles from "./FormItem.module.css";
 
 type Props = {
-  htmlFor: string;
+  htmlFor?: string;
   children: string;
 }
 

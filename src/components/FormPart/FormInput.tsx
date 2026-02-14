@@ -1,26 +1,17 @@
 import FormStyles from "./FormItem.module.css";
 import FormItem from "./FormItem";
 
-type Props = {
+type Props = React.ComponentProps<"input"> & {
   label: string;
   id: string;
-  name: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  disabled?: boolean;
-  type?: string;
 }
 
-export default function FormInput({label, id, name, value, onChange, disabled, type="text"}:Props) {
+export default function FormInput({ label, id, ...inputProps }:Props) {
   return (
     <FormItem label={label} htmlFor={id}>
       <input
-        type={type}
+        {...inputProps}
         id={id}
-        name={name}
-        value={value}
-        disabled={disabled}
-        onChange={onChange}
         className={FormStyles.textBox}
       />
     </FormItem>

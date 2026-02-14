@@ -3,7 +3,7 @@ import FormStyles from "./FormItem.module.css";
 
 type Props = {
   label: string;
-  htmlFor: string;
+  htmlFor?: string;
   children: React.ReactNode;
 }
 
