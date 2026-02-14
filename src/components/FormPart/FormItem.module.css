@@ -1,0 +1,22 @@
+
+.formItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.name{
+  width: 240px;
+}
+
+.textBox{
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid #d1d5db;
+  width: 100%;
+}
+
+.formControl{
+  width: 100%;
+}
